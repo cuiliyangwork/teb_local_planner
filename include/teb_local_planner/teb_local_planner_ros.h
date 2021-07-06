@@ -99,6 +99,15 @@ public:
   TebLocalPlannerROS();
 
   /**
+   * @brief Construct a new Teb Local Planner R O S object
+   * 
+   * @param name 
+   * @param tf 
+   * @param costmap_ros 
+   */
+  TebLocalPlannerROS(std::string name, tf::TransformListener* tf, costmap_2d::Costmap2DROS* costmap_ros);
+
+  /**
     * @brief  Destructor of the plugin
     */
   ~TebLocalPlannerROS();
